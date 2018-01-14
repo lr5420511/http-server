@@ -1,0 +1,34 @@
+﻿div.GroupPanelOfLiao
+{
+    width: auto;
+    height: auto;
+}
+
+div.GroupPanelOfLiao div.GroupPanelOfLiaoPanel
+{
+    float: left;
+}
+
+div.GroupPanelOfLiao div.GroupPanelOfLiaoPanel div.GroupPanelOfLiaoGroup
+{
+    float: left;
+    clear: left;
+}
+
+div.GroupPanelOfLiao div.GroupPanelOfLiaoPanel div.GroupPanelOfLiaoContent
+{
+    border-left-style: solid;
+    border-left-width: 1px;
+    float: right;
+    clear: right;
+}
+
+div.GroupPanelOfLiao div.GroupPanelOfLiaoPanel div.GroupPanelOfLiaoContent div.GroupPanelOfLiaoContentHtml
+{
+    width: 100%;
+    height: 100%;
+    display: none;
+    float: left;
+    overflow: auto;
+    position: relative;
+}

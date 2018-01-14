@@ -1,0 +1,62 @@
+﻿div.NumberOfLiao
+{
+    height: 25px;
+}
+
+div.NumberOfLiao *
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+div.NumberOfLiao div.NumberOfLiaoWrapper
+{
+    position: absolute;
+    float: left;
+    height: 25px;
+    overflow: hidden;
+}
+
+div.NumberOfLiao div.NumberOfLiaoWrapper div.NumberOfLiaoWrapperRoute
+{
+    background-color: #FFFFFF;
+    border: 1px solid #666666;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    height: 5px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+div.NumberOfLiao div.NumberOfLiaoWrapper span.NumberOfLiaoWrapperValue
+{
+    font-family: 微软雅黑;
+    font-size: small;
+    line-height: 25px;
+    text-align: center;
+    white-space: nowrap;
+    height: 25px;
+    float: right;
+    overflow: hidden;
+}
+
+div.NumberOfLiao div.NumberOfLiaoWrapper div.NumberOfLiaoWrapperVernier
+{
+    background-color: #6666FF;
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    top: 5px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    transition: background-color 1s;
+}
+
+div.NumberOfLiao div.NumberOfLiaoWrapper div.NumberOfLiaoWrapperVernier:hover
+{
+    background-color: #9999FF;
+}

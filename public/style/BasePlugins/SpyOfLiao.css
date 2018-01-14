@@ -1,0 +1,106 @@
+﻿div.SpyOfLiao
+{
+    width: 365px;
+}
+
+div.SpyOfLiao *
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+div.SpyOfLiao div.SpyOfLiaoWrapper
+{
+    position: absolute;
+    width: 365px;
+    float: left;
+    overflow: hidden;
+}
+
+div.SpyOfLiao div.SpyOfLiaoWrapper ul.SpyOfLiaoWrapperContent
+{
+    position: absolute;
+    width: 365px;
+    top: 0px;
+    left: 0px;
+    float: left;
+    list-style-type: none;
+}
+
+div.SpyOfLiao div.SpyOfLiaoWrapper ul.SpyOfLiaoWrapperContent li.SpyOfLiaoWrapperContentItem
+{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width: 365px;
+    height: 110px;
+    float: left;
+    clear: both;
+    cursor: pointer;
+    transition: background-color 2s;
+}
+
+div.SpyOfLiao div.SpyOfLiaoWrapper ul.SpyOfLiaoWrapperContent li.SpyOfLiaoWrapperContentItem img.SpyOfLiaoWrapperContentItemScene
+{
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+div.SpyOfLiao div.SpyOfLiaoWrapper ul.SpyOfLiaoWrapperContent li.SpyOfLiaoWrapperContentItem div.SpyOfLiaoWrapperContentItemTitle
+{
+    font-family: 黑体;
+    font-size: medium;
+    line-height: 18px;
+    white-space: nowrap;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    width: 250px;
+    height: 18px;
+    float: left;
+    overflow: hidden;
+}
+
+div.SpyOfLiao div.SpyOfLiaoWrapper ul.SpyOfLiaoWrapperContent li.SpyOfLiaoWrapperContentItem div.SpyOfLiaoWrapperContentItemDescription
+{
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #CCCCCC;
+    text-indent: 12px;
+    line-height: 18px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    width: 250px;
+    height: 55px;
+    float: left;
+    overflow: hidden;
+}
+
+div.SpyOfLiao div.SpyOfLiaoWrapper ul.SpyOfLiaoWrapperContent li.SpyOfLiaoWrapperContentItem div.SpyOfLiaoWrapperContentItemRates
+{
+    white-space: nowrap;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 250px;
+    height: 25px;
+    float: left;
+    overflow: hidden;
+}
+
+div.SpyOfLiao div.SpyOfLiaoWrapper ul.SpyOfLiaoWrapperContent li.SpyOfLiaoWrapperContentItem div.SpyOfLiaoWrapperContentItemRates 
+i.SpyOfLiaoWrapperContentItemRatesIcon
+{
+    background-repeat: no-repeat;
+    background-position: -4px -4px;
+    width: 25px;
+    height: 25px;
+    float: left;
+    transition: transform 1s;
+}
+
+div.SpyOfLiao div.SpyOfLiaoWrapper ul.SpyOfLiaoWrapperContent li.SpyOfLiaoWrapperContentItem div.SpyOfLiaoWrapperContentItemRates 
+i.SpyOfLiaoWrapperContentItemRatesIcon:hover
+{
+    transform: rotateY(360deg);
+}

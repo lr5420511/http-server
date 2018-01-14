@@ -1,0 +1,39 @@
+﻿div.ButtonOfLiao
+{
+    height: 25px;
+}
+
+div.ButtonOfLiao *
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+div.ButtonOfLiao div.ButtonOfLiaoWrapper
+{
+    position: absolute;
+    height: 25px;
+    float: left;
+    cursor: pointer;
+}
+
+div.ButtonOfLiao div.ButtonOfLiaoWrapper div.ButtonOfLiaoWrapperContent
+{
+    font-family: 微软雅黑;
+    font-size: medium;
+    line-height: 25px;
+    color: #222222;
+    text-align: center;
+    white-space: nowrap;
+    height: 25px;
+    overflow: hidden;
+}
+
+div.ButtonOfLiao div.ButtonOfLiaoWrapper div.ButtonOfLiaoWrapperMask
+{
+    position: absolute;
+    height: 25px;
+    top: 0px;
+    left: 0px;
+    opacity: 0.1;
+}

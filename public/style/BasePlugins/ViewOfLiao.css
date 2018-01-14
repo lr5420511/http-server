@@ -1,0 +1,170 @@
+﻿div.ViewOfLiao
+{
+    
+}
+
+div.ViewOfLiao *
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper
+{
+    position: absolute;
+    float: left;
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper ul.ViewOfLiaoWrapperContent
+{
+    float: left;
+    clear: both;
+    list-style-type: none;
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper div.ViewOfLiaoWrapperPager
+{
+    background-color: #A0A0A0;
+    margin-right: 2px;
+    margin-left: 2px;
+    height: 25px;
+    float: left;
+    clear: both;
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper ul.ViewOfLiaoWrapperContent li.ViewOfLiaoWrapperContentItem
+{
+    margin: 2px;
+    display: none;
+    float: left;
+    overflow: visible;
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper ul.ViewOfLiaoWrapperContent li.ViewOfLiaoWrapperContentItem div.ViewOfLiaoWrapperContentItemBlock
+{
+    margin: 2px;
+    position: absolute;
+    z-index: 500;
+    display: none;
+    float: left;
+    cursor: pointer;
+    opacity: 0;
+    box-shadow: 0px 2px 2px #333333;
+    transition: background 1s, transform .5s;
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper ul.ViewOfLiaoWrapperContent li.ViewOfLiaoWrapperContentItem div.ViewOfLiaoWrapperContentItemBlock:hover
+{
+    box-shadow: 0px 4px 2px #666666;
+    transform: translate(0px, -2px);
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper ul.ViewOfLiaoWrapperContent li.ViewOfLiaoWrapperContentItem div.ViewOfLiaoWrapperContentItemBlock 
+div.ViewOfLiaoWrapperContentItemBlockTitle
+{
+    font-family: 黑体;
+    font-size: medium;
+    line-height: 18px;
+    white-space: nowrap;
+    margin: 2px 1px 1px 2px;
+    height: 18px;
+    float: left;
+    clear: left;
+    overflow: hidden;
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper ul.ViewOfLiaoWrapperContent li.ViewOfLiaoWrapperContentItem div.ViewOfLiaoWrapperContentItemBlock 
+img.ViewOfLiaoWrapperContentItemBlockScene
+{
+    margin: 2px 2px 2px 1px;
+    width: 100px;
+    height: 100px;
+    float: right;
+    clear: right;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper ul.ViewOfLiaoWrapperContent li.ViewOfLiaoWrapperContentItem div.ViewOfLiaoWrapperContentItemBlock 
+div.ViewOfLiaoWrapperContentItemBlockDiscription
+{
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666666;
+    line-height: 20px;
+    text-indent: 12px;
+    margin: 1px 1px 1px 2px;
+    height: 60px;
+    float: left;
+    clear: left;
+    overflow: hidden;
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper ul.ViewOfLiaoWrapperContent li.ViewOfLiaoWrapperContentItem div.ViewOfLiaoWrapperContentItemBlock 
+div.ViewOfLiaoWrapperContentItemBlockOther
+{
+    font-family: 微软雅黑;
+    font-size: small;
+    color: #333333;
+    line-height: 18px;
+    text-indent: 18px;
+    white-space: nowrap;
+    background-image: url('../../image/viewtag.png');
+    background-repeat: no-repeat;
+    background-position: -7px -7px;
+    margin: 1px 1px 2px 2px;
+    height: 18px;
+    float: left;
+    clear: left;
+    overflow: hidden;
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper div.ViewOfLiaoWrapperPager div
+{
+    background-repeat: no-repeat;
+    background-position: -4px -4px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: background-color 1s, transform .5s;
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper div.ViewOfLiaoWrapperPager div.ViewOfLiaoWrapperPagerPrev
+{
+    background-image: url('../../image/viewprev.png');
+    margin-left: 3px;
+    float: left;
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper div.ViewOfLiaoWrapperPager div.ViewOfLiaoWrapperPagerPrev:hover
+{
+    background-color: #808080;
+    transform: translate(-3px, 0px);
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper div.ViewOfLiaoWrapperPager div.ViewOfLiaoWrapperPagerNext
+{
+    background-image: url('../../image/viewnext.png');
+    margin-right: 3px;
+    float: right;
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper div.ViewOfLiaoWrapperPager div.ViewOfLiaoWrapperPagerNext:hover
+{
+    background-color: #808080;
+    transform: translate(3px, 0px);
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper div.ViewOfLiaoWrapperPager div.ViewOfLiaoWrapperPagerRefresh
+{
+    background-image: url('../../image/viewrefresh.png');
+    margin: 0px auto 0px auto;
+    border-radius: 12.5px;
+    -moz-border-radius: 12.5px;
+}
+
+div.ViewOfLiao div.ViewOfLiaoWrapper div.ViewOfLiaoWrapperPager div.ViewOfLiaoWrapperPagerRefresh:hover
+{
+    background-color: #808080;
+    transform: rotate(360deg);
+}

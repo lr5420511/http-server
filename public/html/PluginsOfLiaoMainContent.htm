@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <script type = "text/javascript" src = "../script/BasePages/PluginsOfLiaoMainContent.js"></script>
+  <link href = "../style/BasePages/PluginsOfLiaoMainContent.css" rel = "Stylesheet" type = "text/css" />
+</head>
+<body>
+  <div class = "MainContentWrapper"></div>
+  <script type = "text/javascript">
+      InitMainContent({
+          Url: "../json/MainContentItems.json",
+          GetTitle: function (item) {
+              return item["Name"];
+          },
+          GetContentHtml: function (item) {
+              return item["Person"]["Content"];
+          }
+      });
+  </script>
+</body>
+</html>

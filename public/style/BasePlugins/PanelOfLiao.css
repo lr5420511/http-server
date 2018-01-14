@@ -1,0 +1,90 @@
+﻿div.PanelOfLiao
+{
+    min-height: 51px;
+}
+
+div.PanelOfLiao div, span
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.PanelOfLiao div.PanelOfLiaoWrapper
+{
+    min-height: 51px;
+    float: left;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    box-shadow: .4px .4px 6px #666666;
+    -moz-box-shadow: .4px .4px 1px #666666;
+    -webkit-box-shadow: .4px .4px 1px #666666;
+}
+
+div.PanelOfLiao div.PanelOfLiaoWrapper div.PanelOfLiaoWrapperHead, div.PanelOfLiaoWrapperContent
+{
+    float: left;
+    clear: both;
+}
+
+div.PanelOfLiao div.PanelOfLiaoWrapper div.PanelOfLiaoWrapperHead
+{
+    border-left-style: solid;
+    border-left-width: 4px;
+    border-left-color: #6666FF;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #6666FF;
+    height: 50px;
+    border-radius: 4px 0px 0px 0px;
+    -moz-border-radius: 4px 0px 0px 0px;
+}
+
+div.PanelOfLiao div.PanelOfLiaoWrapper div.PanelOfLiaoWrapperContent
+{
+    
+}
+
+div.PanelOfLiao div.PanelOfLiaoWrapper div.PanelOfLiaoWrapperHead span
+{
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+div.PanelOfLiao div.PanelOfLiaoWrapper div.PanelOfLiaoWrapperHead span.PanelOfLiaoWrapperHeadTitle
+{
+    font-family: 微软雅黑;
+    font-size: medium;
+    line-height: 25px;
+    text-indent: 5px;
+    white-space: nowrap;
+    float: left;
+    overflow: hidden;
+}
+
+div.PanelOfLiao div.PanelOfLiaoWrapper div.PanelOfLiaoWrapperHead span.PanelOfLiaoWrapperHeadOperat
+{
+    background-repeat: no-repeat;
+    background-position: -4px -4px;
+    width: 25px;
+    float: right;
+    cursor: pointer;
+    border-radius: 12.5px;
+    -moz-border-radius: 12.5px;
+    transition: transform .5s;
+}
+
+div.PanelOfLiao div.PanelOfLiaoWrapper div.PanelOfLiaoWrapperHead span.PanelOfLiaoWrapperHeadOperat:hover
+{
+    background-color: #999999;
+    transform: rotate(360deg);
+}
+
+div.PanelOfLiao div.PanelOfLiaoWrapper div.PanelOfLiaoWrapperContent div.PanelOfLiaoWrapperContentHtml
+{
+    position: absolute;
+    display: block;
+    overflow: auto;
+    opacity: 1;
+}

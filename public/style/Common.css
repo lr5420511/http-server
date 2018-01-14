@@ -1,0 +1,33 @@
+﻿body
+{
+    margin: 0px;
+    overflow: auto;
+}
+
+.BodyChildren
+{
+    float: left;
+    clear: both;
+    width: 100%;
+    min-width: 1024px;
+}
+
+.BodyChildren .BodyChildrenWrapper
+{
+    clear: both;
+    width: 1024px;
+    margin: 0px auto 0px auto;
+    height: 100%;
+}
+
+.FullScene
+{
+    width: 100%;
+    height: 100%;
+}
+
+.Description
+{
+    font-family: 幼圆;
+    line-height: 25px;
+}

@@ -1,0 +1,39 @@
+﻿div.GroupOfLiao
+{
+
+}
+
+div.GroupOfLiao div, ul, li
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.GroupOfLiao div.GroupOfLiaoWrapper
+{
+  float: left;
+  position: absolute;
+  overflow: hidden;
+}
+
+div.GroupOfLiao div.GroupOfLiaoWrapper div.GroupOfLiaoWrapperBlock
+{
+    position: absolute;
+}
+
+div.GroupOfLiao div.GroupOfLiaoWrapper ul.GroupOfLiaoWrapperContent
+{
+    float: left;
+    list-style-type: none;
+}
+
+div.GroupOfLiao div.GroupOfLiaoWrapper ul.GroupOfLiaoWrapperContent li.GroupOfLiaoWrapperContentItem
+{
+    font-family: 微软雅黑;
+    text-align: center;
+    white-space: nowrap;
+    float: left;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}

@@ -1,0 +1,61 @@
+﻿div.FloatMenuOfLiao
+{
+    position: absolute;
+    z-index: 1000;
+    width: 40px;
+    right: 2px;
+    overflow: visible;
+}
+
+div.FloatMenuOfLiao *
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+div.FloatMenuOfLiao ul.FloatMenuOfLiaoContent
+{
+    width: 40px;
+    float: right;
+    list-style-type: none;
+}
+
+div.FloatMenuOfLiao ul.FloatMenuOfLiaoContent li.FloatMenuOfLiaoContentItem
+{
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width: auto;
+    height: 38px;
+    float: right;
+    cursor: pointer;
+    clear: both;
+}
+
+div.FloatMenuOfLiao ul.FloatMenuOfLiaoContent li.FloatMenuOfLiaoContentItem:hover
+{
+    border-color: #B0B0B0;
+}
+
+div.FloatMenuOfLiao ul.FloatMenuOfLiaoContent li.FloatMenuOfLiaoContentItem span.FloatMenuOfLiaoContentItemTitle
+{
+    font-family: 微软雅黑;
+    font-size: medium;
+    text-align: center;
+    line-height: 38px;
+    white-space: nowrap;
+    width: 0px;
+    height: 38px;
+    float: right;
+    overflow: hidden;
+}
+
+div.FloatMenuOfLiao ul.FloatMenuOfLiaoContent li.FloatMenuOfLiaoContentItem img.FloatMenuOfLiaoContentItemIcon
+{
+    width: 38px;
+    height: 38px;
+    float: left;
+}

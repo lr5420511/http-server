@@ -1,0 +1,103 @@
+﻿div.TabOfLiao
+{
+
+}
+
+div.TabOfLiao *
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+div.TabOfLiao div.TabOfLiaoHead
+{
+    height: 25px;
+    float: left;
+}
+
+div.TabOfLiao div.TabOfLiaoBody
+{
+    background-color: #CCCCCC;
+    float: left;
+    overflow: hidden;
+}
+
+div.TabOfLiao div.TabOfLiaoHead div.TabOfLiaoHeadWrapper
+{
+    white-space: nowrap;
+    position: absolute;
+    height: 25px;
+    float: left;
+    overflow: hidden;
+}
+
+div.TabOfLiao div.TabOfLiaoHead div.TabOfLiaoHeadWrapper ul.TabOfLiaoHeadWrapperContent
+{
+    white-space: nowrap;
+    width: 0px;
+    height: 25px;
+    float: left;
+    list-style-type: none;
+}
+
+div.TabOfLiao div.TabOfLiaoHead div.TabOfLiaoHeadWrapper span.TabOfLiaoHeadWrapperFocus
+{
+    background-color: #3366CC;
+    position: absolute;
+    width: 3px;
+    height: 25px;
+    top: 0px;
+    float: left;
+}
+
+div.TabOfLiao div.TabOfLiaoHead div.TabOfLiaoHeadWrapper ul.TabOfLiaoHeadWrapperContent li.TabOfLiaoHeadWrapperContentItem
+{
+    background-color: #999999;
+    margin-right: 1px;
+    height: 25px;
+    float: left;
+    display: inline-block;
+}
+
+div.TabOfLiao div.TabOfLiaoHead div.TabOfLiaoHeadWrapper ul.TabOfLiaoHeadWrapperContent li.TabOfLiaoHeadWrapperContentItem 
+div.TabOfLiaoHeadWrapperContentItemTitle
+{
+    font-family: 微软雅黑;
+    font-size: small;
+    background-image: url('../../image/tabicon.png');
+    background-repeat: no-repeat;
+    background-position: -4px -3px;
+    height: 25px;
+    float: left;
+    cursor: pointer;
+    margin-right: 5px;
+    text-indent: 25px;
+    line-height: 25px;
+}
+
+div.TabOfLiao div.TabOfLiaoHead div.TabOfLiaoHeadWrapper ul.TabOfLiaoHeadWrapperContent li.TabOfLiaoHeadWrapperContentItem 
+div.TabOfLiaoHeadWrapperContentItemRemove
+{
+    background-image: url('../../image/tabdelete.png');
+    background-repeat: no-repeat;
+    background-position: -4px -4px;
+    width: 25px;
+    height: 25px;
+    float: right;
+    border-radius: 12.5px;
+    -moz-border-radius: 12.5px;
+}
+
+div.TabOfLiao div.TabOfLiaoHead div.TabOfLiaoHeadWrapper ul.TabOfLiaoHeadWrapperContent li.TabOfLiaoHeadWrapperContentItem 
+div.TabOfLiaoHeadWrapperContentItemRemove:hover
+{
+    background-color: #808080;
+}
+
+div.TabOfLiao div.TabOfLiaoBody div.TabOfLiaoBodyItemHtml
+{
+    position: absolute;
+    float: left;
+    overflow: auto;
+    display: none;
+}

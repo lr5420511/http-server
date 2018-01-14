@@ -1,0 +1,79 @@
+{
+    "StaticDirectory": "./public",
+    "RoutersPath": "/mainifest/routers.json",
+    "StaticResource": {
+        "htm": "text/html",
+        "html": "text/html",
+        "css": "text/css",
+        "js": "text/javascript",
+        "json": "application/json",
+        "svg": "image/svg",
+        "png": "image/png",
+        "jpg": "image/jpeg",
+        "jpeg": "image/jpeg",
+        "gif": "image/gif",
+        "ico": "image/x-ico",
+        "txt": "text/plain",
+        "xml": "text/xml",
+        "xhtml": "application/xhtml+xml",
+        "pdf": "application/pdf"
+    },
+    "WarnResponse": {
+        "HTTP_METHOD_NON_SUPPORT": {
+            "Code": 405,
+            "Type": "text/plain",
+            "Content": {
+                "IsStatic": false,
+                "Source": "本次HTTP请求的方法不被服务器支持！"
+            }
+        },
+        "RESOURCE_CLASS_NON_SUPPORT": {
+            "Code": 415,
+            "Type": "text/plain",
+            "Content": {
+                "IsStatic": false,
+                "Source": "本次请求操作的静态资源类型不被服务器支持！"
+            }
+        },
+        "ROUTE_UN_FOUND": {
+            "Code": 417,
+            "Type": "text/plain",
+            "Content": {
+                "IsStatic": false,
+                "Source": "本次请求的路由名称没有被找到！"
+            }
+        },
+        "RESOURCE_NO_EXIST": {
+            "Code": 404,
+            "Type": "text/htm",
+            "Content": {
+                "IsStatic": true,
+                "Source": "./public/warn/html/res-no-exist.htm"
+            }
+        },
+        "RESOURCE_EXIST": {
+            "Code": 409,
+            "Type": "text/htm",
+            "Content": {
+                "IsStatic": true,
+                "Source": "./public/warn/html/res-exist.htm"
+            }
+        },
+        "RESOURCE_ERROR_STATUS": {
+            "Code": 403,
+            "Type": "text/htm",
+            "Content": {
+                "IsStatic": true,
+                "Source": "./public/warn/html/res-error-status.htm"
+            }
+        },
+        "ROUTE_NO_HANDLES": {
+            "Code": 417,
+            "Type": "text/plain",
+            "Content": {
+                "IsStatic": false,
+                "Source": "本次请求没有对应的处理方法栈进行处理！"
+            }
+        }
+    }
+}

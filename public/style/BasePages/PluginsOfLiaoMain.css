@@ -1,0 +1,67 @@
+﻿body.MainBody
+{
+    background-color: #CCCCCC;
+}
+
+body.MainBody div.MainHead, div.MainScene, div.MainContent, div.MainFoot
+{
+    float: left;
+}
+
+body.MainBody div.MainHead, div.MainFoot
+{
+    background-color: #666666;
+}
+
+body.MainBody div.MainHead
+{
+    height: 50px;
+    position: fixed;
+    z-index: 1500;
+}
+
+body.MainBody div.MainScene
+{
+    height: 617px;
+    margin-top: 50px;
+}
+
+body.MainBody div.MainContent
+{
+    min-height: 1000px;
+}
+
+body.MainBody div.MainFoot
+{
+    height: 80px;
+}
+
+div.MainHead div.BodyChildrenWrapper div.MainHeadGroup
+{
+    float: right;
+    height: 100%;
+}
+
+div.MainScene div.MainSceneCarousel
+{
+    float: left;
+    clear: both;
+    width: 100%;
+    height: 100%;
+}
+
+div.MainFoot span.MainFootDescription
+{
+    font-size: small;
+    color: #C0C0C0;
+    line-height: 25px;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 25px;
+    float: left;
+    clear: both;
+    overflow: hidden;
+}

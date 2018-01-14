@@ -1,0 +1,13 @@
+﻿[
+  { "Photo": "../local/1.jpg", "Id": 1 },
+  { "Photo": "../local/2.jpg", "Id": 2 },
+  { "Photo": "../local/3.jpg", "Id": 3 },
+  { "Photo": "../local/4.jpg", "Id": 4 },
+  { "Photo": "../local/5.jpg", "Id": 5 },
+  { "Photo": "../local/6.jpg", "Id": 6 },
+  { "Photo": "../local/7.jpg", "Id": 7 },
+  { "Photo": "../local/8.jpg", "Id": 8 },
+  { "Photo": "../local/9.jpg", "Id": 9 },
+  { "Photo": "../local/10.jpg", "Id": 10 },
+  { "Photo": "../local/11.jpg", "Id": 11 }
+]

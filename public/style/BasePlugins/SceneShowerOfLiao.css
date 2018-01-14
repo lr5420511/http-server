@@ -1,0 +1,65 @@
+﻿div.SceneShowerOfLiao
+{
+    
+}
+
+div.SceneShowerOfLiao *
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+div.SceneShowerOfLiao div.SceneShowerOfLiaoWrapper
+{
+    position: absolute;
+    float: left;
+    overflow: hidden;
+}
+
+div.SceneShowerOfLiao div.SceneShowerOfLiaoWrapper ul.SceneShowerOfLiaoWrapperContent
+{
+    white-space: nowrap;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    float: left;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+div.SceneShowerOfLiao div.SceneShowerOfLiaoWrapper ul.SceneShowerOfLiaoWrapperContent li.SceneShowerOfLiaoWrapperContentItem
+{
+    float: left;
+    display: inline-block;
+}
+
+div.SceneShowerOfLiao div.SceneShowerOfLiaoWrapper ul.SceneShowerOfLiaoWrapperContent li.SceneShowerOfLiaoWrapperContentItem 
+div.SceneShowerOfLiaoWrapperContentItemWrapper
+{
+    position: absolute;
+    float: left;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+div.SceneShowerOfLiao div.SceneShowerOfLiaoWrapper ul.SceneShowerOfLiaoWrapperContent li.SceneShowerOfLiaoWrapperContentItem 
+div.SceneShowerOfLiaoWrapperContentItemWrapper img.SceneShowerOfLiaoWrapperContentItemWrapperScene
+{
+    float: left;
+}
+
+div.SceneShowerOfLiao div.SceneShowerOfLiaoWrapper ul.SceneShowerOfLiaoWrapperContent li.SceneShowerOfLiaoWrapperContentItem 
+div.SceneShowerOfLiaoWrapperContentItemWrapper div.SceneShowerOfLiaoWrapperContentItemWrapperDescription
+{
+    font-family: 微软雅黑;
+    font-size: small;
+    text-indent: 2px;
+    color: #FFFFFF;
+    background-color: #000000;
+    position: absolute;
+    left: 0px;
+    float: left;
+    overflow: hidden;
+    opacity: 0.3;
+    white-space: pre-wrap;
+}

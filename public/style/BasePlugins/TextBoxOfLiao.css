@@ -1,0 +1,49 @@
+﻿div.TextBoxOfLiao
+{
+    height: 25px;
+}
+
+div.TextBoxOfLiao *
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+div.TextBoxOfLiao div.TextBoxOfLiaoWrapper
+{
+    white-space: nowrap;
+    position: absolute;
+    height: 25px;
+    float: left;
+    cursor: text;
+    overflow: visible;
+}
+
+div.TextBoxOfLiao div.TextBoxOfLiaoWrapper input.TextBoxOfLiaoWrapperContent
+{
+    font-family: 幼圆;
+    font-size: medium;
+    color: #666666;
+    border-style: none none solid none;
+    border-bottom-width: 1px;
+    border-bottom-color: #000000;
+    position: absolute;
+    height: 25px;
+    top: 0px;
+    left: 0px;
+    float: left;
+    background-color: transparent;
+}
+
+div.TextBoxOfLiao div.TextBoxOfLiaoWrapper span.TextBoxOfLiaoWrapperTitle
+{
+    font-family: 微软雅黑;
+    font-size: medium;
+    line-height: 25px;
+    white-space: nowrap;
+    position: absolute;
+    height: 25px;
+    top: 0px;
+    left: 0px;
+    float: left;
+}

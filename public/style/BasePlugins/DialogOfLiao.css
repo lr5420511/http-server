@@ -1,0 +1,99 @@
+﻿div.DialogOfLiaoMask
+{
+    position: absolute;
+    z-index: 2000;
+    float: left;
+    opacity: 0;
+}
+
+div.DialogOfLiao
+{
+    position: absolute;
+    z-index: 2001;
+    float: left;
+}
+
+div.DialogOfLiao *
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+div.DialogOfLiao div.DialogOfLiaoHead
+{
+    height: 25px;
+    float: left;
+    clear: both;
+    overflow: hidden;
+}
+
+div.DialogOfLiao div.DialogOfLiaoBody
+{
+    background-color: #FFFFFF;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    float: left;
+    clear: both;
+    overflow: hidden;
+}
+
+div.DialogOfLiao div.DialogOfLiaoFoot
+{
+    height: 35px;
+    float: left;
+    clear: both;
+    overflow: hidden;
+}
+
+div.DialogOfLiao div.DialogOfLiaoHead div.DialogOfLiaoHeadTitle
+{
+    font-family: 微软雅黑;
+    font-size: small;
+    text-indent: 25px;
+    line-height: 25px;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-position: -4px -3px;
+    height: 25px;
+    float: left;
+    cursor: move;
+    overflow: hidden;
+}
+
+div.DialogOfLiao div.DialogOfLiaoHead div.DialogOfLiaoHeadClose
+{
+    background-image: url('../../image/dialogclose.png');
+    background-repeat: no-repeat;
+    background-position: -4px -4px;
+    width: 25px;
+    height: 25px;
+    float: right;
+    cursor: pointer;
+    border-radius: 12.5px;
+    -moz-border-radius: 12.5px;
+    transition: background-color 1s, transform .5s;
+}
+
+div.DialogOfLiao div.DialogOfLiaoHead div.DialogOfLiaoHeadClose:hover
+{
+    background-color: #808080;
+    transform: rotate(360deg);
+}
+
+div.DialogOfLiao div.DialogOfLiaoBody div.DialogOfLiaoBodyWrapper
+{
+    position: absolute;
+    width: auto;
+    height: auto;
+    float: left;
+    overflow: auto;
+    min-width: 300px;
+}
+
+div.DialogOfLiao div.DialogOfLiaoFoot div.DialogOfLiaoFootButton
+{
+    float: right;
+    margin: 5px 2px 5px 8px;
+}

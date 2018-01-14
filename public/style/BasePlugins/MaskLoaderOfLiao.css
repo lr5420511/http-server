@@ -1,0 +1,52 @@
+﻿div.MaskLoaderOfLiaoFirst
+{
+    background-color: #9999FF;
+    position: absolute;
+    z-index: 3000;
+    float: left;
+    opacity: 0.1;
+    display: none;
+}
+
+div.MaskLoaderOfLiaoSecond
+{
+    background-color: #9999FF;
+    position: absolute;
+    z-index: 3000;
+    float: left;
+    opacity: 0.1;
+    display: none;
+}
+
+div.MaskLoaderOfLiaoThird
+{
+    background-color: #9999FF;
+    position: absolute;
+    z-index: 3000;
+    float: left;
+    opacity: 0.1;
+    display: none;
+}
+
+div.MaskLoaderOfLiaoFourth
+{
+    background-color: #9999FF;
+    position: absolute;
+    z-index: 3000;
+    float: left;
+    opacity: 0.1;
+    display: none;
+}
+
+div.MaskLoaderOfLiaoIcon
+{
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    position: absolute;
+    z-index: 3001;
+    width: 64px;
+    height: 64px;
+    float: left;
+    overflow: visible;
+    display: none;
+}

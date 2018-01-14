@@ -1,0 +1,77 @@
+﻿div.OperatOfLiaoMask
+{
+    background-color: #CCCCCC;
+    position: absolute;
+    z-index: 2000;
+    display: none;
+    float: left;
+    opacity: 0;
+}
+
+div.OperatOfLiao
+{
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-bottom-width: 0px;
+    position: absolute;
+    z-index: 2001;
+    display: none;
+    float: left;
+}
+
+div.OperatOfLiao *
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.OperatOfLiao div.OperatOfLiaoHead
+{
+    font-family: 微软雅黑;
+    font-size: medium;
+    line-height: 25px;
+    text-indent: 25px;
+    white-space: nowrap;
+    background-image: url('../../image/operat.png');
+    background-repeat: no-repeat;
+    background-position: -4px -2px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #EEEEEE;
+    height: 25px;
+    float: left;
+    clear: both;
+    overflow: hidden;
+}
+
+div.OperatOfLiao ul.OperatOfLiaoContent
+{
+    float: left;
+    clear: both;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+div.OperatOfLiao ul.OperatOfLiaoContent li.OperatOfLiaoContentItem
+{
+    font-family: 微软雅黑;
+    font-size: small;
+    color: #666666;
+    line-height: 25px;
+    text-indent: 5px;
+    white-space: nowrap;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #EEEEEE;
+    height: 25px;
+    float: left;
+    clear: both;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+div.OperatOfLiao ul.OperatOfLiaoContent li.OperatOfLiaoContentItem:hover
+{
+    color: #FFFFFF;
+    background-color: #666666;
+}

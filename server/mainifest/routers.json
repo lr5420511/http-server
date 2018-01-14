@@ -1,0 +1,17 @@
+[{
+    "Method": "GET",
+    "IsStatic": false,
+    "Paths": {
+        "/": "./router/handle/get-root.js"
+    }
+}, {
+    "Method": "POST",
+    "IsStatic": true,
+    "Paths": "./router/static/post.js"
+}, {
+    "Method": "POST",
+    "IsStatic": false,
+    "Paths": {
+
+    }
+}]

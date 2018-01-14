@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <script type = "text/javascript" src = "../script/BasePages/PluginsOfLiaoComponents.js"></script>
+  <link href = "../style/BasePages/PluginsOfLiaoComponents.css" rel = "Stylesheet" type = "text/css" />
+</head>
+<body>
+  <div class = "ComponentsView"></div>
+  <script type = "text/javascript">
+      InitComponents({
+          Url: "../json/ComponentsView.json",
+          GetValueValue: function (item) { return item["Value"]; },
+          GetNameValue: function (item) { return item["Name"]; },
+          GetSceneValue: function (item) { return item["Scene"]; },
+          GetDescriptionValue: function (item) { return item["Description"]; },
+          GetOtherValue: function (item) { return item["Other"] ? "属于" : "不属于"; }
+      });
+  </script>
+</body>
+</html>

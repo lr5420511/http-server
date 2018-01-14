@@ -1,0 +1,21 @@
+﻿[
+  { "Name": "按钮(ButtonOfLiao)", "Value": "ButtonOfLiao", "Scene": "../local/ButtonOfLiao.jpg", "Description": "支持模型到视图的自动状态同步", "Other": false },
+  { "Name": "轮播图(CarouselOfLiao)", "Value": "CarouselOfLiao", "Scene": "../local/CarouselOfLiao.jpg", "Description": "支持本地数据或远程数据源获取，支持模型到视图的自动状态同步", "Other": true },
+  { "Name": "勾选框(CheckBoxOfLiao)", "Value": "CheckBoxOfLiao", "Scene": "../local/CheckBoxOfLiao.jpg", "Description": "支持模型到视图的自动状态同步", "Other": false },
+  { "Name": "窗体(DialogOfLiao)", "Value": "DialogOfLiao", "Scene": "../local/DialogOfLiao.jpg", "Description": "可以根据内容大小调节自身组件大小，支持第三方组件填充，支持模型到视图的自动状态同步", "Other": false },
+  { "Name": "浮动选单(FloatMenuOfLiao)", "Value": "FloatMenuOfLiao", "Scene": "../local/FloatMenuOfLiao.jpg", "Description": "可配置的选单项数量，支持模型到视图的自动状态同步，支持本地数据源", "Other": false },
+  { "Name": "分组(GroupOfLiao)", "Value": "GroupOfLiao", "Scene": "../local/GroupOfLiao.jpg", "Description": "可配置的组数量，支持模型到视图的自动状态同步", "Other": false },
+  { "Name": "分组面板(GroupPanelOfLiao)", "Value": "GroupPanelOfLiao", "Scene": "../local/GroupPanelOfLiao.jpg", "Description": "由基础组件PanelOfLiao和GroupOfLiao组合而成，支持模型到视图的自动状态同步", "Other": false },
+  { "Name": "覆盖加载(MaskLoaderOfLiao)", "Value": "MaskLoaderOfLiao", "Scene": "../local/MaskLoaderOfLiao.jpg", "Description": "高度可配置", "Other": false },
+  { "Name": "多选(MultiOfLiao)", "Value": "MultiOfLiao", "Scene": "../local/MultiOfLiao.jpg", "Description": "支持本地数据或远程数据源获取，支持模型到视图的自动状态同步", "Other": true },
+  { "Name": "数值选择(NumberOfLiao)", "Value": "NumberOfLiao", "Scene": "../local/NumberOfLiao.jpg", "Description": "支持两种方式的数值选择", "Other": false },
+  { "Name": "操作选单(OperatOfLiao)", "Value": "OperatOfLiao", "Scene": "../local/OperatOfLiao.jpg", "Description": "本地获取数据源，支持模型到视图的自动状态同步", "Other": false },
+  { "Name": "面板(PanelOfLiao)", "Value": "PanelOfLiao", "Scene": "../local/PanelOfLiao.jpg", "Description": "可升缩的面板，支持模型到视图的自动状态同步", "Other": false },
+  { "Name": "播报(ReportOfLiao)", "Value": "ReportOfLiao", "Scene": "../local/ReportOfLiao.jpg", "Description": "支持本地数据或远程数据源获取，支持模型到视图的自动状态同步", "Other": true },
+  { "Name": "场景(SceneShowerOfLiao)", "Value": "SceneShowerOfLiao", "Scene": "../local/SceneShowerOfLiao.jpg", "Description": "支持本地数据或远程数据源获取，支持模型到视图的自动状态同步，读取缓存和到期清除缓存重新下载", "Other": true },
+  { "Name": "单选(SelectOfLiao)", "Value": "SelectOfLiao", "Scene": "../local/SelectOfLiao.jpg", "Description": "独特的交互方式，分组加载数据，支持本地数据或远程数据源获取，自动判断数据请求的有效性", "Other": true },
+  { "Name": "上浮(SpyOfLiao)", "Value": "SpyOfLiao", "Scene": "../local/SpyOfLiao.jpg", "Description": "支持本地数据或远程数据源获取，支持模型到视图的自动状态同步，读取缓存和到期清除缓存重新下载", "Other": true },
+  { "Name": "选项卡(TabOfLiao)", "Value": "TabOfLiao", "Scene": "../local/TabOfLiao.jpg", "Description": "可配置的选项卡数量，可关闭的选项卡，支持本地数据源", "Other": false },
+  { "Name": "文本框(TextBoxOfLiao)", "Value": "TextBoxOfLiao", "Scene": "../local/TextBoxOfLiao.jpg", "Description": "可升缩的文本框，简洁，支持模型到视图的自动状态同步", "Other": false },
+  { "Name": "视图(ViewOfLiao)", "Value": "ViewOfLiao", "Scene": "../local/ViewOfLiao.jpg", "Description": "支持远程数据源获取，支持模型到视图的自动状态同步，分页加载数据，自动判断数据请求的有效性", "Other": true }
+]

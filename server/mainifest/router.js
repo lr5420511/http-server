@@ -125,22 +125,24 @@ Object.defineProperties(exports.Router, {
             if (!(route instanceof Array)) {
                 throw new TypeError("Router.ExecuteMethods: route hasn't vaild type");
             }
-            route.forEach((methods, rIndex) => {
-                if (methods instanceof Array) {
+            for (let rIndex = 0; rIndex < route.length; rIndex++) {
+                let curMethods = route[rIndex];
+                if (curMethods instanceof Array) {
                     let next = true;
-                    methods.forEach((method, mIndex) => {
-                        if (method instanceof Function) {
-                            next = method(req, res);
+                    for (let mIndex = 0; mIndex < curMethods.length; mIndex++) {
+                        let curMethod = curMethods[mIndex];
+                        if (curMethod instanceof Function) {
+                            next = curMethod(req, res);
                             if (typeof next !== "boolean" || !next) {
-                                return;
+                                break;
                             }
                         }
-                    });
+                    }
                     if (typeof next !== "boolean") {
-                        return;
+                        break;
                     }
                 }
-            });
+            }
         }
     },
     StaticGetMethod: {

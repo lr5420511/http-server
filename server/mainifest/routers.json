@@ -12,6 +12,6 @@
     "Method": "POST",
     "IsStatic": false,
     "Paths": {
-
+        "/test/post": "./router/handle/post-test.js"
     }
 }]

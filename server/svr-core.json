@@ -45,7 +45,7 @@
         },
         "RESOURCE_NO_EXIST": {
             "Code": 404,
-            "Type": "text/htm",
+            "Type": "text/html",
             "Content": {
                 "IsStatic": true,
                 "Source": "./public/warn/html/res-no-exist.htm"
@@ -53,7 +53,7 @@
         },
         "RESOURCE_EXIST": {
             "Code": 409,
-            "Type": "text/htm",
+            "Type": "text/html",
             "Content": {
                 "IsStatic": true,
                 "Source": "./public/warn/html/res-exist.htm"
@@ -61,7 +61,7 @@
         },
         "RESOURCE_ERROR_STATUS": {
             "Code": 403,
-            "Type": "text/htm",
+            "Type": "text/html",
             "Content": {
                 "IsStatic": true,
                 "Source": "./public/warn/html/res-error-status.htm"

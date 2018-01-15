@@ -65,9 +65,10 @@ exports.HttpServer.prototype = {
         routers.forEach((r) => {
             cur.AddRouter(r.Method, r.IsStatic, r.Paths);
         });
-        this.ServerEntry.listen(this.TcpPoint);
-        this.ServerStatus = "Listen";
-        this.emit(HTTP_SERVER_EVENTS.Started, this);
+        this.ServerEntry.listen(this.TcpPoint, () => {
+            cur.ServerStatus = "Listen";
+            cur.emit(HTTP_SERVER_EVENTS.Started, cur);
+        });
     },
     Stop: function() {
         if (this.ServerStatus !== "Listen") {

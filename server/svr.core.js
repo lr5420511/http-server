@@ -31,7 +31,7 @@ exports.HttpServer = function(tcpPoint = 80) {
             exports.HttpServer.ReceiveRequest(cur, req, res);
         } catch (err) {
             let msg = err.message;
-            this.emit(HTTP_SERVER_EVENTS.Throwed, err, cur);
+            cur.emit(HTTP_SERVER_EVENTS.Throwed, err, cur);
             if (core.WarnResponse.hasOwnProperty(msg)) {
                 let warn = core.WarnResponse[msg];
                 res.Send(

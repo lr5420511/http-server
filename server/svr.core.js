@@ -1,6 +1,6 @@
 "use strict";
 
-require("./mainifest/message");
+require("./mainifest/extend");
 const http = require("http");
 const path = require("path");
 const fs = require("fs");
@@ -31,7 +31,7 @@ exports.HttpServer = function(tcpPoint = 80) {
             exports.HttpServer.ReceiveRequest(cur, req, res);
         } catch (err) {
             let msg = err.message;
-            cur.emit(HTTP_SERVER_EVENTS.Throwed, err, cur);
+            cur.emit(HTTP_SERVER_EVENTS.Throwed, err, cur, req);
             if (core.WarnResponse.hasOwnProperty(msg)) {
                 let warn = core.WarnResponse[msg];
                 res.Send(
@@ -87,9 +87,9 @@ exports.HttpServer.prototype = {
             if (r.Method === method &&
                 r.IsStatic === isStatic) {
                 rIndex = i;
-                return;
+                return false;
             }
-        });
+        }, false);
         return rIndex;
     },
     AddRouter: function(method, isStatic, paths) {

@@ -76,3 +76,28 @@ Object.defineProperties(http.IncomingMessage.prototype, {
         }
     }
 });
+
+const eachSource = Array.prototype.forEach;
+
+Object.defineProperties(Array.prototype, {
+    forEach: {
+        writable: false,
+        enumerable: false,
+        value: function(each, isNaive) {
+            if (typeof isNaive !== "boolean") {
+                isNaive = true;
+            }
+            if (isNaive) {
+                return eachSource.apply(this, [each]);
+            } else if (each instanceof Function) {
+                for (let index = 0; index < this.length; index++) {
+                    let cur = this[index],
+                        next = each(cur, index);
+                    if (typeof next === "boolean" && !next) {
+                        break;
+                    }
+                }
+            }
+        }
+    }
+});

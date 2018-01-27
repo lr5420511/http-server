@@ -21,26 +21,26 @@
     "WarnResponse": {
         "HTTP_METHOD_NON_SUPPORT": {
             "Code": 405,
-            "Type": "text/plain",
+            "Type": "text/html",
             "Content": {
-                "IsStatic": false,
-                "Source": "本次HTTP请求的方法不被服务器支持！"
+                "IsStatic": true,
+                "Source": "./public/warn/html/method-non-support.htm"
             }
         },
         "RESOURCE_CLASS_NON_SUPPORT": {
             "Code": 415,
-            "Type": "text/plain",
+            "Type": "text/html",
             "Content": {
-                "IsStatic": false,
-                "Source": "本次请求操作的静态资源类型不被服务器支持！"
+                "IsStatic": true,
+                "Source": "./public/warn/html/res-non-support.htm"
             }
         },
         "ROUTE_UN_FOUND": {
             "Code": 417,
-            "Type": "text/plain",
+            "Type": "text/html",
             "Content": {
-                "IsStatic": false,
-                "Source": "本次请求的路由名称没有被找到！"
+                "IsStatic": true,
+                "Source": "./public/warn/html/route-not-found.htm"
             }
         },
         "RESOURCE_NO_EXIST": {

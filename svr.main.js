@@ -17,10 +17,10 @@ const menuConsole = new Consoler({ Http: httpSvr },
 menuConsole.Print(
     "******************************************************************************************************\n" +
     "*                                                                                                    *\n" +
-    "*  execute-code [code]: Execute simply javascript code.                                              *\n" +
+    "*  exec-code [code]: Execute simply javascript code, async operat call asyncCaller.                  *\n" +
     "*  exit-node: Exit current nodejs process.                                                           *\n" +
-    "*  start-http-server: Start http server at server side.                                              *\n" +
-    "*  pause-http-server: Pause http server at server side.                                              *\n" +
+    "*  start-http: Start http server at server side.                                                     *\n" +
+    "*  pause-http: Pause http server at server side.                                                     *\n" +
     "*                                                                                                    *\n" +
     "*  Add more commands to /console/commands directory.                                                 *\n" +
     "*                                                                                                    *\n" +

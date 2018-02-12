@@ -79,7 +79,9 @@ Object.defineProperties(Consoler, {
                 const method = Consoler.Commands[cmd];
                 let result;
                 try {
-                    result = method(cur, cur.Context, args);
+                    result = method(cur.Context, args, function() {
+                        cur.Print(Array.prototype.slice.call(arguments, 0));
+                    });
                 } catch (err) {
                     result = err;
                 }

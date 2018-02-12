@@ -18,6 +18,7 @@ menuConsole.Print(
     "******************************************************************************************************\n" +
     "*                                                                                                    *\n" +
     "*  execute-code [code]: Execute simply javascript code.                                              *\n" +
+    "*  exit-node: Exit current nodejs process.                                                           *\n" +
     "*  start-http-server: Start http server at server side.                                              *\n" +
     "*  pause-http-server: Pause http server at server side.                                              *\n" +
     "*                                                                                                    *\n" +

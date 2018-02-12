@@ -79,7 +79,7 @@ Object.defineProperties(Consoler, {
                 const method = Consoler.Commands[cmd];
                 let result;
                 try {
-                    result = method(cur.Context, args);
+                    result = method(cur, cur.Context, args);
                 } catch (err) {
                     result = err;
                 }

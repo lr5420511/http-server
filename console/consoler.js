@@ -3,47 +3,42 @@
 const Events = require("events").EventEmitter;
 const { Readable, Writable } = require("stream");
 
-const Consoler = function(ins, input, output, prompt = ">") {
-    if (!(ins instanceof Object) && typeof ins !== "object") {
-        throw new TypeError("Consoler.constructor: ins of argument isn't instance of Object.");
-    }
+const Consoler = function(ctx, input, output, prompt = ">") {
     if (!(input instanceof Readable) || !(output instanceof Writable)) {
-        throw new TypeError("Consoler.constructor: input or output of argument isn't vaild stream.");
+        throw new TypeError("Consoler.constructor: input or output isn't vaild stream.");
     }
-    if (typeof prompt !== "string") {
-        prompt = ">";
-    }
-    this.Instance = ins;
-    this.Input = input;
-    this.Output = output;
-    this.PromptChar = prompt;
+    ctx = ctx instanceof Object ? ctx : {};
+    prompt = typeof prompt === "string" ? prompt : ">";
+    this.Context = ctx;
+    this.Inner = input;
+    this.Outer = new console.__proto__.constructor(output);
+    this.Outer.src = output;
+    this.Prompt = prompt;
     Events.apply(this, Array.prototype.slice.call(arguments, 4));
 };
 
 Consoler.prototype = {
     constructor: Consoler,
     __proto__: Events.prototype,
-    Print: function(menu, encode = "utf8") {
-        if (typeof menu !== "string") {
-            throw new TypeError("Consoler.prototype.Print: menu of argument need be string.");
-        }
+    Print: function(ctn) {
+        this.Outer.log(ctn);
+        this.Outer.src.write("\n" + this.Prompt);
+    },
+    Accept: function(decode = "utf8") {
+        decode = typeof decode === "string" ? decode : "utf8";
         const cur = this;
-        this.Input._events["data"] = [];
-        this.Input.on("data", (chunk) => {
-            chunk = chunk.toString(encode);
-            const ins = JSON.parse(chunk);
-            if (ins.hasOwnProperty("cmd") && ins.hasOwnProperty("args")) {
-                Consoler.ExecuteCommand(cur, ins.cmd, ins.args);
+        this.Inner._events["data"] = [];
+        this.Inner.on("data", (chunk) => {
+            chunk = chunk.toString(decode);
+            const cmdArray = Consoler.HandleCommand(chunk);
+            if (cmdArray[0] === "") {
+                const message = "Input command can't be empty.";
+                cur.Print(message);
+                cur.emit(Consoler.Events.BeforeExec, new Error(message));
             } else {
-                cur.Output.write(Buffer.from("Command instance hasn't cmd and args properties."));
-                cur.Prompt();
+                Consoler.Execute(cur, cmdArray[0], cmdArray.slice(1));
             }
         });
-        this.Output.write(Buffer.from(menu));
-        this.Prompt();
-    },
-    Prompt: function() {
-        this.Output.write(Buffer.from("\n\n" + this.PromptChar));
     }
 };
 
@@ -52,8 +47,8 @@ Object.defineProperties(Consoler, {
         writable: false,
         enumerable: true,
         value: {
-            BeforeExecute: "BEFORE_EXECUTE",
-            AfterExecute: "AFTER_EXECUTE"
+            BeforeExec: "BEFORE_EXECUTE",
+            AfterExec: "AFTER_EXECUTE"
         }
     },
     Commands: {
@@ -61,43 +56,43 @@ Object.defineProperties(Consoler, {
         enumerable: true,
         value: {}
     },
-    ExecuteCommand: {
+    HandleCommand: {
+        writable: false,
+        enumerable: true,
+        value: function(cmd) {
+            cmd = cmd.trim();
+            const single = " ";
+            const double = "  ";
+            while (cmd.includes(double)) {
+                cmd = cmd.replace(double, single);
+            }
+            return cmd.split(single);
+        }
+    },
+    Execute: {
         writable: false,
         enumerable: true,
         value: function(cur, cmd, args) {
             const cmdExist = Consoler.Commands.hasOwnProperty(cmd);
             if (cmdExist) {
+                cur.emit(Consoler.Events.BeforeExec, undefined, cmd, args);
                 const method = Consoler.Commands[cmd];
-                cur.emit(Consoler.Events.BeforeExecute, method, cmd, args);
-                method(cur.Instance, args, function() {
-                    Array.prototype.forEach.call(arguments, (arg, index) => {
-                        if (arg instanceof Object) {
-                            try {
-                                arg = JSON.stringify(arg);
-                            } catch (err) {
-                                arg = arg.toString();
-                            }
-                        } else if (typeof arg === "undefined") {
-                            arg = "undefined";
-                        } else if (arg === null) {
-                            arg = "null";
-                        } else {
-                            arg = arg.toString();
-                        }
-                        arg = arg + ", ";
-                        cur.Output.write(Buffer.from(arg));
-                    });
-                    cur.emit(Consoler.Events.AfterExecute, method, cmd, args);
-                    cur.Prompt();
-                });
+                let result;
+                try {
+                    result = method(cur.Context, args);
+                } catch (err) {
+                    result = err;
+                }
+                cur.Print(result);
+                cur.emit(Consoler.Events.AfterExec, result, cmd, args);
             } else {
-                cur.Output.write(Buffer.from(cmd + " of command not found."));
-                cur.Prompt();
+                const message = cmd + " command not found.";
+                cur.Print(message);
+                cur.emit(Consoler.Events.BeforeExec, new Error(message));
             }
         }
     }
 });
 
 module.exports = Consoler;
-
-require("./config");
+require("./cmd-config");

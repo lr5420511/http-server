@@ -19,9 +19,12 @@ menuConsole.Print(
     "*                                                                                                    *\n" +
     "*  exec-code [code]: Execute simply javascript code, async operat call asyncCaller.                  *\n" +
     "*  exit-node: Exit current nodejs process.                                                           *\n" +
+    "*  mk-dir [path]: Make new directory.                                                                *\n" +
+    "*  mk-doc [path] [encode] [text]: Make new document.                                                 *\n" +
     "*  start-http: Start http server at server side.                                                     *\n" +
     "*  pause-http: Pause http server at server side.                                                     *\n" +
     "*                                                                                                    *\n" +
+    "*  space => \x20                                                                                     *\n" +
     "*  Add more commands to /console/commands directory.                                                 *\n" +
     "*                                                                                                    *\n" +
     "******************************************************************************************************"

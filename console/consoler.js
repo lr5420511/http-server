@@ -1,5 +1,6 @@
 "use strict";
 
+require("./extends");
 const Events = require("events").EventEmitter;
 const { Readable, Writable } = require("stream");
 
@@ -63,10 +64,13 @@ Object.defineProperties(Consoler, {
             cmd = cmd.trim();
             const single = " ";
             const double = "  ";
-            while (cmd.includes(double)) {
-                cmd = cmd.replace(double, single);
-            }
-            return cmd.split(single);
+            const space = "\\x20";
+            cmd = cmd.replace(double, single, true);
+            const ar = cmd.split(single);
+            ar.forEach((item, index) => {
+                ar[index] = item.replace(space, single, true);
+            });
+            return ar;
         }
     },
     Execute: {

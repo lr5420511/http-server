@@ -24,7 +24,6 @@ menuConsole.Print(
     "*  start-http: Start http server at server side.                                                     *\n" +
     "*  pause-http: Pause http server at server side.                                                     *\n" +
     "*                                                                                                    *\n" +
-    "*  space => \x20                                                                                     *\n" +
     "*  Add more commands to /console/commands directory.                                                 *\n" +
     "*                                                                                                    *\n" +
     "******************************************************************************************************"
